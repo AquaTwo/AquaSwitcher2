@@ -22,9 +22,9 @@ public class gamemodeCreativeCommand implements CommandExecutor {
                     Player receiver = Bukkit.getServer().getPlayerExact(username);
 
                     if (receiver == null){
-                        p.sendMessage(ChatColor.YELLOW + args[name] + " " + ChatColor.AQUA + "cannot be found.");
+                        p.sendMessage(ChatColor.RED + args[name] + " " + "cannot be found.");
                     }else{
-                        p.sendMessage(ChatColor.AQUA + args[name]+"'s gamemode was set to" + " " + ChatColor.YELLOW + "Creative");
+                        p.sendMessage(ChatColor.YELLOW + args[name] + ChatColor.AQUA + "'s gamemode was set to" + " " + ChatColor.YELLOW + "Creative");
                         receiver.setGameMode(GameMode.CREATIVE);
                     }
                 }
