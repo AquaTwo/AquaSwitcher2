@@ -8,7 +8,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class gamemodeCreativeCommand implements CommandExecutor {
+public class gamemodeAdventureCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -24,16 +24,15 @@ public class gamemodeCreativeCommand implements CommandExecutor {
                     if (receiver == null){
                         p.sendMessage(ChatColor.RED + args[name] + " " + "cannot be found.");
                     }else{
-                        p.sendMessage(ChatColor.YELLOW + args[name] + "'s" + " " + ChatColor.AQUA + "gamemode was set to" + " " + ChatColor.YELLOW + "Creative");
-                        receiver.sendMessage(ChatColor.AQUA + "Your gamemode has been set to" + " " + ChatColor.YELLOW + "Creative");
-                        receiver.setGameMode(GameMode.CREATIVE);
-
+                        p.sendMessage(ChatColor.YELLOW + args[name] + "'s" + " " + ChatColor.AQUA + "gamemode was set to" + " " + ChatColor.YELLOW + "Adventure");
+                        receiver.sendMessage(ChatColor.AQUA + "Your gamemode has been set to" + " " + ChatColor.YELLOW + "Adventure");
+                        receiver.setGameMode(GameMode.ADVENTURE);
                     }
                 }
 
             }else{
-                p.setGameMode(GameMode.CREATIVE);
-                p.sendMessage(ChatColor.AQUA + "Set own gamemode to" + " " + ChatColor.YELLOW + "Creative");
+                p.setGameMode(GameMode.ADVENTURE);
+                p.sendMessage(ChatColor.AQUA + "Set own gamemode to" + " " + ChatColor.YELLOW + "Adventure");
             }
         }
         return true;

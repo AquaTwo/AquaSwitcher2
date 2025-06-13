@@ -15,9 +15,45 @@ commands:
     permission: aquaswitcher.creative
     permission-message: You cannot use this.
 
+  survival:
+    description: Sets any players gamemode to survival
+    aliases: [ gms, GMS, gamemodes, gm0, GM0, gamemode0 ]
+    usage: /<command> players
+    permission: aquaswitcher.survival
+    permission-message: You cannot use this.
+
+  adventure:
+    description: Sets any players gamemode to adventure
+    aliases: [ gma, GMA, gamemodea, gm2, GM2, gamemode2 ]
+    usage: /<command> players
+    permission: aquaswitcher.adventure
+    permission-message: You cannot use this.
+
+  spectator:
+    description: Sets any players gamemode to spectator
+    aliases: [ gmsp, GMSP, gamemodesp, gm3, GM3, gamemode3 ]
+    usage: /<command> players
+    permission: aquaswitcher.spectator
+    permission-message: You cannot use this.
+
 permissions:
   aquaswitcher.creative:
     description: Sets any players gamemode to creative
+    default: op
+    children:
+
+  aquaswitcher.survival:
+    description: Sets any players gamemode to survival
+    default: op
+    children:
+
+  aquaswitcher.adventure:
+    description: Sets any players gamemode to adventure
+    default: op
+    children:
+
+  aquaswitcher.spectator:
+    description: Sets any players gamemode to spectator
     default: op
     children:
 
