@@ -1,0 +1,15 @@
+name: AquaSwitcher2
+version: '1.0'
+main: me.aquatwo.aquaSwitcher2.AquaSwitcher2
+api-version: '1.21'
+prefix: AquaSwitcher
+load: STARTUP
+authors: [ AquaTwo ]
+description: My updated switcher plugin with new and improved commands.
+
+commands:
+
+
+
+permissions:
+
