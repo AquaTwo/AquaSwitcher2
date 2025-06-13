@@ -8,7 +8,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class gamemodeAdventureCommand implements CommandExecutor {
+public class healCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -24,15 +24,15 @@ public class gamemodeAdventureCommand implements CommandExecutor {
                     if (receiver == null){
                         p.sendMessage(ChatColor.RED + args[name] + " " + "cannot be found.");
                     }else{
-                        p.sendMessage(ChatColor.YELLOW + args[name] + "'s" + " " + ChatColor.AQUA + "gamemode was set to" + " " + ChatColor.YELLOW + "Adventure");
-                        receiver.sendMessage(ChatColor.AQUA + "Your gamemode has been set to" + " " + ChatColor.YELLOW + "Adventure");
-                        receiver.setGameMode(GameMode.ADVENTURE);
+                        p.sendMessage(ChatColor.YELLOW + args[name] + " " + ChatColor.AQUA + "was healed");
+                        receiver.sendMessage(ChatColor.AQUA + "You have been healed");
+                        receiver.setHealth(20.0);
                     }
                 }
 
             }else{
-                p.sendMessage(ChatColor.AQUA + "Set own gamemode to" + " " + ChatColor.YELLOW + "Adventure");
-                p.setGameMode(GameMode.ADVENTURE);
+                p.sendMessage(ChatColor.AQUA + "Healed");
+                p.setHealth(20.0);
             }
         }
         return true;

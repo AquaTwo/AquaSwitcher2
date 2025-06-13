@@ -32,8 +32,8 @@ public class gamemodeCreativeCommand implements CommandExecutor {
                 }
 
             }else{
-                p.setGameMode(GameMode.CREATIVE);
                 p.sendMessage(ChatColor.AQUA + "Set own gamemode to" + " " + ChatColor.YELLOW + "Creative");
+                p.setGameMode(GameMode.CREATIVE);
             }
         }
         return true;

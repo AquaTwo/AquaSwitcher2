@@ -31,8 +31,8 @@ public class gamemodeSpectatorCommand implements CommandExecutor {
                 }
 
             }else{
-                p.setGameMode(GameMode.SPECTATOR);
                 p.sendMessage(ChatColor.AQUA + "Set own gamemode to" + " " + ChatColor.YELLOW + "Spectator");
+                p.setGameMode(GameMode.SPECTATOR);
             }
         }
         return true;

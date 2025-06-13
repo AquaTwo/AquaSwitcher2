@@ -36,6 +36,20 @@ commands:
     permission: aquaswitcher.spectator
     permission-message: You cannot use this.
 
+  heal:
+    description: Heals the player to max hp
+    aliases: []
+    usage: /<command> players
+    permission: aquaswitcher.heal
+    permission-message: You cannot use this.
+
+  feed:
+    description: Fills the players hunger bar
+    aliases: []
+    usage: /<command> players
+    permission: aquaswitcher.feed
+    permission-message: You cannot use this.
+
 permissions:
   aquaswitcher.creative:
     description: Sets any players gamemode to creative
@@ -54,6 +68,16 @@ permissions:
 
   aquaswitcher.spectator:
     description: Sets any players gamemode to spectator
+    default: op
+    children:
+
+  aquaswitcher.heal:
+    description: Heals the player to max hp
+    default: op
+    children:
+
+  aquaswitcher.feed:
+    description: Fills the players hunger bar
     default: op
     children:
 

@@ -31,8 +31,8 @@ public class gamemodeSurvivalCommand implements CommandExecutor {
                 }
 
             }else{
-                p.setGameMode(GameMode.SURVIVAL);
                 p.sendMessage(ChatColor.AQUA + "Set own gamemode to" + " " + ChatColor.YELLOW + "Survival");
+                p.setGameMode(GameMode.SURVIVAL);
             }
         }
         return true;
