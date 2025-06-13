@@ -8,8 +8,16 @@ authors: [ AquaTwo ]
 description: My updated switcher plugin with new and improved commands.
 
 commands:
-
-
+  creative:
+    description: Sets any players gamemode to creative
+    aliases: [gmc, GMC, gamemodec, gm1, GM1, gamemode1 ]
+    usage: /<command> players
+    permission: aquaswitcher.creative
+    permission-message: You cannot use this.
 
 permissions:
+  aquaswitcher.creative:
+    description: Sets any players gamemode to creative
+    default: op
+    children:
 
