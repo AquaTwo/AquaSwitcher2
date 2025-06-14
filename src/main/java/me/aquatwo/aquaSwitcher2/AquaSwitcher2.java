@@ -14,6 +14,7 @@ public final class AquaSwitcher2 extends JavaPlugin {
         getCommand("spectator").setExecutor(new gamemodeSpectatorCommand());
         getCommand("heal").setExecutor(new healCommand());
         getCommand("feed").setExecutor(new feedCommand());
+        getCommand("fly").setExecutor(new toggleFlyCommand());
 
     }
 

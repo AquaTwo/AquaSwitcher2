@@ -50,6 +50,13 @@ commands:
     permission: aquaswitcher.feed
     permission-message: You cannot use this.
 
+  fly:
+    description: Allows the player to toggle flight
+    aliases: [ f, tf, togglefly ]
+    usage: /<command> players
+    permission: aquaswitcher.fly
+    permission-message: You cannot use this.
+
 permissions:
   aquaswitcher.creative:
     description: Sets any players gamemode to creative
@@ -78,6 +85,11 @@ permissions:
 
   aquaswitcher.feed:
     description: Fills the players hunger bar
+    default: op
+    children:
+
+  aquaswitcher.fly:
+    description: Allows the player to toggle flight
     default: op
     children:
 
